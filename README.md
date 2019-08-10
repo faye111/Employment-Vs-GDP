@@ -1,25 +1,25 @@
-## ETL Report - Employment & GDP
+# ETL Report - Employment & GDP
 
 We decided to create a useful data pipeline for analyzing international socioeconomic trends. Pulled the standardized data from the OECD, and prepared it for the future analysis
 
-Extracting Data:
+## Extracting Data:
 
 1.  Pulled 2 CSV files from the OECD website:
     
 
-1.  [Employment rate](https://data.oecd.org/emp/employment-rate.htm): Employment rates are defined as a measure of the extent to which available labour resources (people available to work) are being used. They are calculated as the ratio of the employed to the working age population.
+A.  [Employment rate](https://data.oecd.org/emp/employment-rate.htm): Employment rates are defined as a measure of the extent to which available labour resources (people available to work) are being used. They are calculated as the ratio of the employed to the working age population.
     
-2.  [Gross domestic product (GDP)](https://data.oecd.org/gdp/gross-domestic-product-gdp.htm): Gross domestic product (GDP) is the standard measure of the value added created through the production of goods and services in a country during a certain period. [measured in US dollars]
-    
-
-# Transforming Data:
-
-1.  Loading the csv files to dataframes with pandas
-    
-2.  Removing the unnecessary data
+B.  [Gross domestic product (GDP)](https://data.oecd.org/gdp/gross-domestic-product-gdp.htm): Gross domestic product (GDP) is the standard measure of the value added created through the production of goods and services in a country during a certain period. [measured in US dollars]
     
 
-1.  Employment rates:
+## Transforming Data:
+
+#### 1.  Loading the csv files to dataframes with pandas
+    
+#### 2.  Removing the unnecessary data
+    
+
+A)  Employment rates:
     
 
 -   Keeping only the total unemployment, removed the metrics segmented by gender
@@ -36,19 +36,19 @@ Extracting Data:
 -   Dropping the redundant columns, keeping only the country, year, percentage of employment.
     
 
-3.  GDP data:
+B)  GDP data:
     
 
 -   Removing the redundant columns, keeping only the GDP (MLN USD)
     
 
-4.  Combining both of the datasets into the single dataframe (pd.merge on country & time)
+#### 3.  Combining both of the datasets into the single dataframe (pd.merge on country & time)
     
 
-1.  Keeping only the years since 2000
+-  Keeping only the years since 2000
     
 
-Loading Data:
+## Loading Data:
 
 1.  Creating the local db & schema for the tables in PostgreSQL
     
