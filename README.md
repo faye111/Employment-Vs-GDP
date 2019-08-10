@@ -30,7 +30,7 @@ A)  Employment rates:
 
 B)  GDP data:
     
-- Removing the redundant columns, keeping only the GDP (MLN USD)
+- Removing the redundant columns, keeping only the country, year, GDP (MLN USD).
     
 
 #### 3.  Combining both of the datasets into the single dataframe (pd.merge on country & time)
