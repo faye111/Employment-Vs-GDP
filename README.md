@@ -12,7 +12,7 @@ Extracting Data:
 2.  [Gross domestic product (GDP)](https://data.oecd.org/gdp/gross-domestic-product-gdp.htm): Gross domestic product (GDP) is the standard measure of the value added created through the production of goods and services in a country during a certain period. [measured in US dollars]
     
 
-Transforming Data:
+# Transforming Data:
 
 1.  Loading the csv files to dataframes with pandas
     
