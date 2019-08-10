@@ -4,7 +4,7 @@ We decided to create a useful data pipeline for analyzing international socioeco
 
 ## Extracting Data:
 
-1.  Pulled 2 CSV files from the OECD website:
+Pulled 2 CSV files from the OECD website:
     
 
 A.  [Employment rate](https://data.oecd.org/emp/employment-rate.htm): Employment rates are defined as a measure of the extent to which available labour resources (people available to work) are being used. They are calculated as the ratio of the employed to the working age population.
@@ -30,7 +30,7 @@ A)  Employment rates:
 -   Annualizing all the data
     
 
--   Some of the countries were using monthly or quarterly measurement cycle, some just the yearly one. We needed just the yearly cycle for pairing with the GDP data (yearly only): We annualized the data by calculating the mean yearly value for any country-time period.
+    -  Some of the countries were using monthly or quarterly measurement cycle, some just the yearly one. We needed just the yearly cycle for pairing with the GDP data (yearly only): We annualized the data by calculating the mean yearly value for any country-time period.
     
 
 -   Dropping the redundant columns, keeping only the country, year, percentage of employment.
