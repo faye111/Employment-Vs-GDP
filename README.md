@@ -40,8 +40,8 @@ B)  GDP data:
 
 ## Loading Data:
 
-    1.  Creating the local db & schema for the tables in PostgreSQL
+   1.  Creating the local db & schema for the tables in PostgreSQL
     
-    2.  Connecting to the created db using sqlalchemy
+   2.  Connecting to the created db using sqlalchemy
     
-    3.  Loading our cleaned up datatadframes into the prepared db tables via pandas
+   3.  Loading our cleaned up datatadframes into the prepared db tables via pandas
